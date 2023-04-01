@@ -12,10 +12,19 @@ namespace ConsoleApp26
         private double y;
 
 
+
+
         public double X
         {
-            get { return x; }
-            private set { x = value; }
+            get 
+            { 
+                return x; 
+            }
+            
+            set 
+            { 
+                x = value; 
+            }
         }
 
         public double Y { get => y; private set => y = value; }

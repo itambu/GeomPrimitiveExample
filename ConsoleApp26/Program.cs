@@ -1,13 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp26;
 
-Point p = new Point(3, 7);
 
-p.Move(4, 5);
-p.Rotate(0.03);
+// creating object model
+Manager manager = new Manager("ddddd");
+Cleaner cleaner = new Cleaner("gggggg");
 
-for (int i = 0; i < 100; i++)
+List<Employee> list = new List<Employee>()
 {
-    p.Rotate(0.03);
-    Console.WriteLine($"({p.X}, {p.Y})");
-}
+    cleaner,
+    new Cleaner("Bob"),
+    manager,
+};
+
+var dept = new Department()
+{
+    Name = "fhdjfhdjfd",
+    TeamLead = new ReportingTeamLead("Bart"),
+    Employees = list
+};
+
+// process executing
+
+dept.CleanPremice();
+
+
+
+
+
+
+
