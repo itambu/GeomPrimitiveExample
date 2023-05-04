@@ -5,16 +5,22 @@ using System.Text;
 
 namespace ConsoleApp26
 {
-    public class ReportingTeamLead : TeamLead
+    public class ReportingTeamLead : TeamLead, IOperation
     {
         public ReportingTeamLead(string name) : base(name)
         {
         }
 
+        void IOperation.Perform()
+        {
+            Console.WriteLine("Super teamlead");
+            DoWork(true);
+        }
+
         protected override void DoWork(bool arg)
         {
             base.DoWork(true);
-            Console.WriteLine("Team has sent a report");
+            Console.WriteLine("Teamlead has sent a report");
         }
     }
 }

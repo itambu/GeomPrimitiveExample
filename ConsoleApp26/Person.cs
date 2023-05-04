@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp26
 {
-    public class Person : Object
+    public abstract class Person : Object
     {
         public string Name { get; private set; }
         public Person(string name) 

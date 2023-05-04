@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="ClassDiagram1.cd" />
-  </ItemGroup>
-
 </Project>
